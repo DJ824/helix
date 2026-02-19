@@ -1,0 +1,4 @@
+[[language]]
+name = "cpp"
+language-servers = ["clangd"]
+

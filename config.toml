@@ -1,0 +1,31 @@
+# Helix editor configuration for C++ development with CLion-like settings
+
+theme = "purp"
+
+[editor]
+line-number = "absolute"  # Standard line numbers (not relative)
+cursorline = true         # Highlight the line the cursor is on
+auto-format = true        # Auto-format code on save
+auto-pairs = true         # Auto-pair brackets, quotes, etc.
+bufferline = "always"     # Always show buffer line at the top
+color-modes = true        # Color the mode indicator
+idle-timeout = 50         # Idle timeout in milliseconds
+completion-trigger-len = 1 # Show completion after typing 1 character
+true-color = true         # Use true color
+scrolloff = 5             # Keep 5 lines visible around cursor when scrolling
+clipboard-provider = "wayland"  
+
+[editor.indent-guides]
+render = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.lsp]
+display-messages = true   # Display LSP progress messages
+display-inlay-hints = true # Show inlay hints
+
+[editor.soft-wrap]
+enable = false           
