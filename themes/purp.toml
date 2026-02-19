@@ -1,112 +1,79 @@
-# Twitch Dark Theme for Helix editor (More White)
-# Matching CLion Twitch dark theme with more white elements and less purple
+# NYU-only (reduced purple, white cursor)
 
-# Base UI elements
-"ui.background" = { bg = "#0E0E0E" }
-"ui.text" = { fg = "#E5E5E5" }
-"ui.virtual" = { fg = "#6B6B6B" }
-"ui.cursor" = { fg = "black", bg = "#BB9AF7" }
-"ui.cursor.primary" = { fg = "black", bg = "#D4BFFF" }
-"ui.cursor.match" = { fg = "black", bg = "#A277FF" }
-"ui.selection" = { bg = "#4A3E6D" }
-"ui.linenr" = { fg = "#6B6B6B" }
-"ui.linenr.selected" = { fg = "#BB9AF7" }
-"ui.statusline" = { fg = "#E5E5E5", bg = "#1E1E2E" }
-"ui.statusline.inactive" = { fg = "#BBBBBB", bg = "#1E1E2E" }
-"ui.statusline.normal" = { fg = "#E5E5E5", bg = "#1E1E2E" }
-"ui.statusline.insert" = { fg = "#E5E5E5", bg = "#9D7CD8" }
-"ui.statusline.select" = { fg = "#E5E5E5", bg = "#7D59C2" }
-"ui.popup" = { bg = "#1E1E2E" }
-"ui.window" = { bg = "#1E1E2E" }
-"ui.help" = { fg = "#E5E5E5", bg = "#1E1E2E" }
-"ui.menu" = { fg = "#E5E5E5", bg = "#1E1E2E" }
-"ui.menu.selected" = { fg = "#E5E5E5", bg = "#4A3E6D" }
-"ui.menu.scroll" = { fg = "#BB9AF7", bg = "#1E1E2E" }
+# UI
+"ui.background" = { bg = "#181A1B" }
+"ui.window" = { bg = "#2D2B33" }
+"ui.popup" = { bg = "#2D2B33" }
+"ui.help" = { fg = "#E1DEDC", bg = "#2D2B33" }
 
-# Comments in gray
-"comment" = { fg = "#808080", modifiers = ["italic"] }
+"ui.text" = { fg = "#E1DEDC" }
+"ui.virtual" = { fg = "#5D546E" }
 
-# Preprocessor directives in gold/orange
-"preproc" = { fg = "#E67E22" }
-"keyword.directive" = { fg = "#E67E22" }
+# White cursor
+"ui.cursor" = { fg = "#181A1B", bg = "#E1DEDC" }
+"ui.cursor.primary" = { fg = "#181A1B", bg = "#E1DEDC" }
+"ui.cursor.match" = { fg = "#181A1B", bg = "#85738C" }
 
-# Only basic keywords in medium purple
-"keyword" = { fg = "#AC8EE3" }
-"keyword.return" = { fg = "#AC8EE3" }
-"keyword.function" = { fg = "#AC8EE3" }
+"ui.selection" = { bg = "#2A0C46" }
 
-# Most control flow keywords in WHITE
-"keyword.control" = { fg = "#AC8EE3" }
-"keyword.control.import" = { fg = "#FFFFFF" }
-"keyword.operator" = { fg = "#FFFFFF" }
-"operator" = { fg = "#FFFFFF" }
-"punctuation" = { fg = "#FFFFFF" }
-"punctuation.delimiter" = { fg = "#FFFFFF" }
-"punctuation.bracket" = { fg = "#FFFFFF" }
+"ui.linenr" = { fg = "#5D546E" }
+"ui.linenr.selected" = { fg = "#E1DEDC" }
 
-# Types and type modifiers in light purple
-"type" = { fg = "#C3B1E1" }
-"type.builtin" = { fg = "#C3B1E1" }
-"type.qualifier" = { fg = "#C3B1E1" }
-"storage.type" = { fg = "#C3B1E1" }
-"storage.modifier" = { fg = "#C3B1E1" }
+"ui.statusline" = { fg = "#E1DEDC", bg = "#2D2B33" }
+"ui.statusline.inactive" = { fg = "#85738C", bg = "#2D2B33" }
+"ui.statusline.insert" = { fg = "#E1DEDC", bg = "#2A0C46" }
+"ui.statusline.select" = { fg = "#E1DEDC", bg = "#2A0C46" }
 
-# Custom types in light purple
-"class" = { fg = "#B39DDB" }
-"struct" = { fg = "#B39DDB" }
-"enum" = { fg = "#B39DDB" }
-"union" = { fg = "#B39DDB" }
-"namespace" = { fg = "#B39DDB" }
+"ui.menu" = { fg = "#E1DEDC", bg = "#2D2B33" }
+"ui.menu.selected" = { fg = "#E1DEDC", bg = "#2A0C46" }
 
-# Variables in WHITE
-"variable" = { fg = "#FFFFFF" }
-"variable.parameter" = { fg = "#D7CAE8" }
-"constant" = { fg = "#FFFFFF" }
-"constant.builtin" = { fg = "#FFFFFF" }
-"constant.numeric" = { fg = "#FFFFFF" }
-"constant.character" = { fg = "#FFFFFF" }
+# Syntax
 
-# Special identifiers and member variables in yellow
-"variable.builtin" = { fg = "#FFD54F" }
-"variable.other.member" = { fg = "#FFD54F" }
-"property" = { fg = "#FFD54F" }
-"label" = { fg = "#FFD54F" }
-"special" = { fg = "#FFD54F" }
+"comment" = { fg = "#5D546E", modifiers = ["italic"] }
 
-# Function-related items in light purple
-"function" = { fg = "#A98CE0" }
-"function.macro" = { fg = "#A98CE0" }
-"function.method" = { fg = "#A98CE0" }
-"function.special" = { fg = "#A98CE0" }
-"function.builtin" = { fg = "#A98CE0" }
-"constructor" = { fg = "#A98CE0" }
-"module" = { fg = "#A98CE0" }
-"tag" = { fg = "#A98CE0" }
-"attribute" = { fg = "#A98CE0" }
+# Purple only for structural language elements
+"keyword" = { fg = "#A97AC8" }
+"keyword.control" = { fg = "#A97AC8" }
+"keyword.function" = { fg = "#A97AC8" }
+"keyword.return" = { fg = "#A97AC8" }
 
-# Strings in green
-"string" = { fg = "#B5BD68" }
-"string.regexp" = { fg = "#B5BD68" }
-"string.special" = { fg = "#B5BD68" }
+"type" = { fg = "#A97AC8" }
+"type.builtin" = { fg = "#A97AC8" }
+"class" = { fg = "#A97AC8" }
+"struct" = { fg = "#A97AC8" }
+"enum" = { fg = "#A97AC8" }
+"namespace" = { fg = "#A97AC8" }
+"constructor" = { fg = "#A97AC8" }
 
-# Additional language-specific highlights
-"markup.heading" = { fg = "#9F7EDB", modifiers = ["bold"] }
-"markup.list" = { fg = "#E67E22" }
-"markup.bold" = { fg = "#FFFFFF", modifiers = ["bold"] }
-"markup.italic" = { fg = "#FFFFFF", modifiers = ["italic"] }
-"markup.link.url" = { fg = "#B5BD68", modifiers = ["underlined"] }
-"markup.link.text" = { fg = "#B39DDB" }
-"markup.quote" = { fg = "#B39DDB", modifiers = ["italic"] }
-"markup.raw" = { fg = "#B39DDB" }
+# Everything else mostly neutral
 
-# Diagnostics
+"operator" = { fg = "#E1DEDC" }
+"punctuation" = { fg = "#E1DEDC" }
+
+"function" = { fg = "#E1DEDC" }
+"function.method" = { fg = "#E1DEDC" }
+"function.builtin" = { fg = "#E1DEDC" }
+
+"variable" = { fg = "#E1DEDC" }
+"variable.parameter" = { fg = "#85738C" }
+"property" = { fg = "#85738C" }
+
+"constant" = { fg = "#E1DEDC" }
+
+"strings" = { fg = "#85738C" }
+"string" = { fg = "#85738C" }
+
+# Diagnostics restrained
 "diagnostic" = { modifiers = ["underlined"] }
-"diagnostic.error" = { fg = "#FF5555" }
-"diagnostic.warning" = { fg = "#FFAA00" }
-"diagnostic.info" = { fg = "#00AAFF" }
-"diagnostic.hint" = { fg = "#00FFAA" }
+"diagnostic.error" = { fg = "#A97AC8", modifiers = ["underlined"] }
+"diagnostic.warning" = { fg = "#85738C", modifiers = ["underlined"] }
 
-# Diff view
-"diff.plus" = { fg = "#00FF00" }
-"diff.minus" = { fg = "#FF0000" }
-"diff.delta" = { fg = "#00AAFF" }
+# Diff minimal
+"diff.plus" = { fg = "#E1DEDC" }
+"diff.minus" = { fg = "#85738C" }
+"diff.delta" = { fg = "#A97AC8" }
+
+# Links
+"markup.link.url" = { fg = "#A97AC8", modifiers = ["underlined"] }
+"markup.link.text" = { fg = "#A97AC8" }
+
